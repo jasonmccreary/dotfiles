@@ -1,0 +1,5 @@
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWCOLORHINTS=true
+
+PROMPT_COMMAND='__git_ps1 "[\u@\h \W" "]\\\$ " " (%s)"'
+
