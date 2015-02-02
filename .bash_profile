@@ -21,7 +21,6 @@ function precmd() {
 }
 
 # shortcuts
-alias ec2='ssh -i /Users/jason/.ssh/pureconcepts.pem ec2-user@107.22.199.6'
 alias hgrep='history | grep'
 alias workspace='cd ~/Documents/workspace/'
 
