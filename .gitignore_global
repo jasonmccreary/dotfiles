@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+.DS_Store?
+._*
+
+# Editors
+.project
+.settings
+.idea/

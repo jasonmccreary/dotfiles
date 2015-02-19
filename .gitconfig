@@ -1,0 +1,10 @@
+[user]
+	name = Jason McCreary
+	email = jason@pureconcepts.net
+[alias]
+	unstage = reset HEAD --
+	logo = log --oneline
+	append = commit --amend --no-edit
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = /usr/bin/vim
