@@ -1,5 +1,18 @@
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
 
-PROMPT_COMMAND='__git_ps1 "[\u@\h \W" "]\\\$ " " (%s)"'
+PROMPT_COMMAND=__prompt_command
+
+function __prompt_command() {
+    local rc="$?"
+    exit=""
+
+    if [ $rc == 0 ]; then
+        exit="\[\033[0;32m\]$"
+    else
+        exit="\[\033[0;31m\]✗"
+    fi
+
+    __git_ps1 "\[\033[0;33m\][\u@\h \W]\[\033[0m\]" " $exit\[\033[0m\] " " (%s)"
+}
 
