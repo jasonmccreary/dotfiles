@@ -23,6 +23,7 @@ function precmd() {
 # shortcuts
 alias hgrep='history | grep'
 alias workspace='cd ~/Documents/workspace/'
+alias gst='git status'
 
 # added paths
 export PATH=/usr/local/git/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
