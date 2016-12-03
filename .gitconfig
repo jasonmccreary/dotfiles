@@ -5,6 +5,8 @@
 	unstage = reset HEAD --
 	logo = log --oneline
 	append = commit --amend --no-edit
+	lola = log --graph --oneline --decorate --all
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
+	ignorecase = false
