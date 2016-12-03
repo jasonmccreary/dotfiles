@@ -8,11 +8,10 @@ function __prompt_command() {
     exit=""
 
     if [ $rc == 0 ]; then
-        exit="\[\033[0;32m\]$"
+        exit="\[\033[1;30m\]-"
     else
         exit="\[\033[0;31m\]✗"
     fi
 
-    __git_ps1 "\[\033[0;33m\][\u@\h \W]\[\033[0m\]" " $exit\[\033[0m\] " " (%s)"
+    __git_ps1 "$exit \[\033[0;36m\]\W\[\033[0m\]" " →\[\033[0m\]  " " · %s"
 }
-
