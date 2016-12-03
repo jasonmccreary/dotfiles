@@ -26,6 +26,4 @@ alias workspace='cd ~/Dropbox/workspace/'
 alias gst='git status'
 
 # added paths
-export PATH=/usr/local/git/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH=~/.composer/vendor/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
