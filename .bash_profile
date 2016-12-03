@@ -22,7 +22,7 @@ function precmd() {
 
 # shortcuts
 alias hgrep='history | grep'
-alias workspace='cd ~/Documents/workspace/'
+alias workspace='cd ~/Dropbox/workspace/'
 alias gst='git status'
 
 # added paths
