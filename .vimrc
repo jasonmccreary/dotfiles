@@ -12,10 +12,10 @@ filetype plugin on    " Enable filetype-specific plugins
 :set shiftwidth=2
 :set softtabstop=4
 
-:set foldmethod=indent
-:set foldnestmax=10
-:set foldlevelstart=1
-:hi Folded ctermbg=233 ctermfg=241
+":set foldmethod=indent
+":set foldnestmax=10
+":set foldlevelstart=1
+":hi Folded ctermbg=233 ctermfg=241
 
 :set backspace=indent,eol,start
 
