@@ -26,4 +26,4 @@ alias workspace='cd ~/Dropbox/workspace/'
 alias gst='git status'
 
 # added paths
-export PATH=~/.composer/vendor/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
+export PATH=~/.composer/vendor/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/php5/bin:$PATH
