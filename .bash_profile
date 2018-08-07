@@ -29,6 +29,7 @@ function mkcd() {
 alias hgrep='history | grep'
 alias workspace='cd ~/Dropbox/workspace/'
 alias gst='git status'
+alias gwd='pwd | pbcopy'
 
 # added paths
 export PATH=~/.composer/vendor/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/php5/bin:$PATH
