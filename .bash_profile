@@ -20,6 +20,11 @@ function precmd() {
     fi
 }
 
+# functions
+function mkcd() {
+    mkdir "$1" && cd "$1"
+}
+
 # shortcuts
 alias hgrep='history | grep'
 alias workspace='cd ~/Dropbox/workspace/'
