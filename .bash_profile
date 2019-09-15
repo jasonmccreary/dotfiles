@@ -32,7 +32,7 @@ function phormat() {
 
 # shortcuts
 alias hgrep='history | grep'
-alias workspace='cd ~/Dropbox/workspace/'
+alias workspace='cd ~/workspace/'
 alias gst='git status'
 alias gwd='pwd | pbcopy'
 alias now='date +%s | pbcopy'
