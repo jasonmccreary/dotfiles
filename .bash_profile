@@ -25,6 +25,11 @@ function mkcd() {
     mkdir "$1" && cd "$1"
 }
 
+function phormat() {
+    phpcbf --standard=PSR2 "$1"
+}
+
+
 # shortcuts
 alias hgrep='history | grep'
 alias workspace='cd ~/Dropbox/workspace/'
