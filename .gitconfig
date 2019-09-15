@@ -6,6 +6,7 @@
 	logo = log --oneline
 	append = commit --amend --no-edit
 	lola = log --graph --oneline --decorate --all
+	wip = commit -m \"WIP\"
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
