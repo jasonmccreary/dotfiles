@@ -35,6 +35,7 @@ alias hgrep='history | grep'
 alias workspace='cd ~/Dropbox/workspace/'
 alias gst='git status'
 alias gwd='pwd | pbcopy'
+alias now='date +%s | pbcopy'
 
 # added paths
 export PATH=~/.composer/vendor/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/php5/bin:$PATH
