@@ -7,3 +7,7 @@
 .project
 .settings
 .idea/
+.php_cs.cache
+
+# Laravel
+.env.jmac
