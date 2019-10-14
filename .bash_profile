@@ -29,6 +29,11 @@ function phormat() {
     phpcbf --standard=PSR2 "$1"
 }
 
+function fixup() {
+    git commit --fixup="$1"
+    GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash "$1"~2
+}
+
 
 # shortcuts
 alias hgrep='history | grep'
