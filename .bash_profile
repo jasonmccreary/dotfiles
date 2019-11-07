@@ -2,6 +2,9 @@
 [[ -f "$HOME/.git_prompt.sh" ]] && source "$HOME/.git_prompt.sh"
 [[ -f "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
 
+# hide zsh notice
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # keep history "forever"
 export HISTSIZE=100000
 export HISTFILESIZE=100000
