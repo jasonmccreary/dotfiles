@@ -1,0 +1,17 @@
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWCOLORHINTS=true
+
+PROMPT_COMMAND=__prompt_command
+
+function __prompt_command() {
+    local rc="$?"
+    exit=""
+
+    if [ $rc == 0 ]; then
+        exit="\[\033[1;30m\]-"
+    else
+        exit="\[\033[0;31m\]✗"
+    fi
+
+    __git_ps1 "🐳 $exit \[\033[0;36m\]\W\[\033[0m\]" " →\[\033[0m\]  " " · %s"
+}
