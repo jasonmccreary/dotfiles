@@ -44,6 +44,16 @@ function composer-link() {
   composer require $2 @dev
 }
 
+function dec() {
+  containers=`docker ps | awk '{print $1,$2,$NF}' | grep -m 1 -F $1`
+  container_id=`echo $containers | awk '{print $1}'`
+
+  if [ -n "$container_id" ]; then
+    docker exec -it $container_id /bin/bash
+  else
+    echo "No container found for query: '$1'"
+  fi
+}
 
 # shortcuts
 alias hgrep='history | grep'
