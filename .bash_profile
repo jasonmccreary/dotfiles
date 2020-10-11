@@ -49,7 +49,11 @@ function dec() {
   container_id=`echo $containers | awk '{print $1}'`
 
   if [ -n "$container_id" ]; then
-    docker exec -it $container_id /bin/bash
+    if [[ $PWD/ = /Users/*/workspace/* ]]; then
+      docker exec -w /var/www/"${PWD#*/workspace/}" -it $container_id /bin/bash
+    else
+      docker exec -it $container_id /bin/bash
+    fi
   else
     echo "No container found for query: '$1'"
   fi
