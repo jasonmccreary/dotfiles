@@ -65,6 +65,9 @@ alias workspace='cd ~/workspace/'
 alias gst='git status'
 alias gwd='pwd | pbcopy'
 alias now='date +%s | pbcopy'
+alias nah='git reset --hard && git clean -df'
+alias mfs='php artisan migrate:fresh --seed'
+alias tinker='php artisan tinker'
 
 # added paths
 export PATH=~/.composer/vendor/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/php5/bin:$PATH
