@@ -28,6 +28,10 @@ function mkcd() {
     mkdir "$1" && cd "$1"
 }
 
+function gdf() {
+    curl -s -o "$2" "https://raw.githubusercontent.com/laravel-shift/laravel-$1/master/$2"
+}
+
 function phormat() {
     phpcbf --standard=PSR2 "$1"
 }
