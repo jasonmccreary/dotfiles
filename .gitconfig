@@ -11,3 +11,9 @@
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
 	ignorecase = false
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
+[checkout]
+	defaultRemote = origin
